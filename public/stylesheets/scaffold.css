@@ -1,0 +1,119 @@
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #424242;
+}
+
+body {
+  font-family: 'Helvetica Neue';
+}
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#container header {
+  padding: 2em 0 1em .5em;
+}
+
+#container header h1 {
+  color: #fff;
+  font-size: 277%;
+}
+
+#main {
+  background-color: #eee;
+  color: #222;
+  overflow: auto;
+}
+
+#main #content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  float: left;
+  margin: .75em 0 .75em .75em;
+  padding: 1em;
+  width: 65%;
+}
+
+#main #content > h1 {
+  font-size: 123.1%;
+  margin-top: 0;
+}
+
+#main #content table {
+  width: 100%;
+}
+
+#main #content table th {
+  border: 0;
+  color: #555;
+  font-size: 85%;
+  padding: .6em .4em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#main #content table td {
+  border: 1px solid #e7e7e7;
+  border-width: 1px 0;
+}
+
+#main #content table tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+#main #content table tr:first-child {
+  background-color: #fff;
+}
+
+#main #side {
+  float: left;
+  margin: 1em;
+  padding: .75em 0;
+  width: 25%;
+}
+
+/* Errors */
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
