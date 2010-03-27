@@ -34,7 +34,7 @@ body {
 
 #main #content {
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   float: left;
   margin: .75em 0 .75em .75em;
   padding: 1em;
@@ -60,7 +60,7 @@ body {
 }
 
 #main #content table td {
-  border: 1px solid #e7e7e7;
+  border: 1px solid #ddd;
   border-width: 1px 0;
 }
 
@@ -72,11 +72,39 @@ body {
   background-color: #fff;
 }
 
+#main #content form p {
+  padding-bottom: .75em;
+}
+
+#main #content label {
+  color: #444;
+  font-weight: bold;
+}
+
+#main #content input[type=text], #main #content input[type=password] {
+  font-size: 138%;
+  margin-top: .25em;
+  padding: .2em;
+  width: 45%;
+}
+
 #main #side {
   float: left;
   margin: 1em;
   padding: .75em 0;
-  width: 25%;
+  width: 28%;
+}
+
+#main #side h3 {
+  border-bottom: 1px solid #bbb;
+  color: #888;
+  margin-top: 1.5em;
+  padding: 0 0 .2em .4em;
+  text-transform: lowercase;
+}
+
+#main #side h3:first-child {
+  margin-top: 0;
 }
 
 /* Errors */
