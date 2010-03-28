@@ -188,9 +188,10 @@ a[href$=new], input[type=submit] {
   color: #111;
   cursor: default;
   display: inline-block;
-  font-size: 85%;
+  font-size: 92%;
   font-weight: bold;
-  padding: .7em 1.3em;
+  line-height: 1em;
+  padding: .8em 1.2em;
   text-decoration: none;
   text-shadow: 1px 1px 0 #fff;
 }
@@ -202,6 +203,8 @@ a[href$=new]:hover, input[type=submit]:hover {
 
 a[href$=new]:active, input[type=submit]:active {
   background: #ddd;
+  padding-top: .9em;
+  padding-bottom: .7em;
 }
 
 /* Errors */
