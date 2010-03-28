@@ -6,12 +6,15 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {
 
 html {
   background-color: #424242;
-  
 }
 
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#424242));
   font-family: 'Helvetica Neue';
+}
+
+a {
+  color: #004080;
 }
 
 #container {
@@ -58,7 +61,6 @@ header h1 strong {
 
 #main #content #flash {
   background-color: #feffbe;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F9FABF), to(#feffbe));
   border: 1px solid #ffd600;
   color: #414233;
   padding: .75em;
@@ -135,7 +137,6 @@ header h1 strong {
 
 #main #side nav ul li {
   list-style: none;
-  
 }
 
 #main #side nav ul li a {
@@ -173,6 +174,32 @@ body.user_sessions #main #side {
   display: none;
 }
 
+/* Buttons */
+
+a[href$=new], input[type=submit] {
+  background-color: #eee;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#d2d2d2));
+  border: 1px solid #bbb;
+  -webkit-border-radius: 4px;
+  color: #111;
+  cursor: default;
+  display: inline-block;
+  font-size: 85%;
+  font-weight: bold;
+  padding: .7em 1.3em;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+a[href$=new]:hover, input[type=submit]:hover {
+  background-color: #f4f4f4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#e5e5e5));
+}
+
+a[href$=new]:active, input[type=submit]:active {
+  background: #ddd;
+}
+
 /* Errors */
 
 #errorExplanation {
@@ -186,10 +213,6 @@ body.user_sessions #main #side {
 
 #errorExplanation p {
   display: none;
-}
-
-.fieldWithErrors {
-  display: inline;
 }
 
 .fieldWithErrors label {
