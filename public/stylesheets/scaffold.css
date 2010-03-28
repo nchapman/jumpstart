@@ -6,9 +6,11 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {
 
 html {
   background-color: #424242;
+  
 }
 
 body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#424242));
   font-family: 'Helvetica Neue';
 }
 
@@ -24,25 +26,33 @@ body {
 #container header h1 {
   color: #fff;
   font-size: 277%;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#container header h1 strong {
+  font-weight: bold;
 }
 
 #main {
   background-color: #eee;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ccc));
+  border: 1px solid #111;
   color: #222;
   overflow: auto;
+  -webkit-box-shadow: .25em .25em 1em #222;
 }
 
 #main #content {
   background-color: #fff;
-  border: 1px solid #bbb;
+  border: 1px solid #ccc;
   float: left;
   margin: .75em 0 .75em .75em;
   padding: 1em;
-  width: 65%;
+  width: 68%;
 }
 
 #main #content > h1 {
-  font-size: 123.1%;
+  font-size: 138%;
   margin-top: 0;
 }
 
@@ -52,7 +62,7 @@ body {
 
 #main #content table th {
   border: 0;
-  color: #555;
+  color: #626262;
   font-size: 85%;
   padding: .6em .4em;
   text-align: left;
@@ -92,19 +102,46 @@ body {
   float: left;
   margin: 1em;
   padding: .75em 0;
-  width: 28%;
+  width: 25%;
 }
 
 #main #side h3 {
-  border-bottom: 1px solid #bbb;
   color: #888;
-  margin-top: 1.5em;
+  margin: 1em 0 .5em 0;
   padding: 0 0 .2em .4em;
   text-transform: lowercase;
 }
 
 #main #side h3:first-child {
   margin-top: 0;
+}
+
+#main #side nav ul {
+  margin: 0 0 0 0;
+}
+
+#main #side nav ul li {
+  list-style: none;
+  
+}
+
+#main #side nav ul li a {
+  border-bottom: 1px solid #aaa;
+  color: #000;
+  display: block;
+  margin-bottom: .4em;
+  opacity: .5;
+  padding: 0 0 .3em .8em;
+  text-decoration: none;
+  -webkit-transition: opacity .1s ease-out;
+}
+
+#main #side nav ul li a:hover {
+  opacity: .80;
+}
+
+body#user_session #side {
+  display: none;
 }
 
 /* Errors */

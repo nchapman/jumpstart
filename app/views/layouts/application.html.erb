@@ -15,7 +15,7 @@
   <body>
     <div id="container">
       <header>
-        <h1>jumpstart</h1>
+        <h1><strong>jump</strong>start</h1>
       </header>
       <section id="main">
         <section id="content" class="yui-cssbase">
@@ -23,14 +23,16 @@
         <%= yield %>
         </section>
         <section id="side" class="yui-cssbase">
-          <h3>Navigation</h3>
-          <ul>
-            <li><%= link_to 'Home', admin_path %></li>
-          </ul>
-          <h3>Administration</h3>
-          <ul>
-            <li><%= link_to 'Users', admin_users_path %></li>
-          </ul>
+          <nav>
+            <h3>Navigation</h3>
+            <ul>
+              <li><%= link_to 'Home', admin_path %></li>
+            </ul>
+            <h3>Administration</h3>
+            <ul>
+              <li><%= link_to 'Users', admin_users_path %></li>
+            </ul>
+          </nav>
         </section>
       </section>
     </div>
