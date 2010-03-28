@@ -17,6 +17,10 @@ a {
   color: #004080;
 }
 
+.quiet {
+  color: #999;
+}
+
 #container {
   margin: 0 auto;
   width: 960px;
