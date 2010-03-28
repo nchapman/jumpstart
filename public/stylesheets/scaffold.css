@@ -19,17 +19,22 @@ body {
   width: 960px;
 }
 
-#container header {
+header {
   padding: 2em 0 1em .5em;
 }
 
-#container header h1 {
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header h1 {
   color: #fff;
   font-size: 277%;
   text-shadow: 2px 2px 4px #000;
 }
 
-#container header h1 strong {
+header h1 strong {
   font-weight: bold;
 }
 
@@ -49,6 +54,14 @@ body {
   margin: .75em 0 .75em .75em;
   padding: 1em;
   width: 68%;
+}
+
+#main #content #flash {
+  background-color: #feffbe;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9FABF), to(#feffbe));
+  border: 1px solid #ffd600;
+  color: #414233;
+  padding: .75em;
 }
 
 #main #content > h1 {
@@ -140,7 +153,23 @@ body {
   opacity: .80;
 }
 
-body#user_session #side {
+/* User sessions */
+
+body.user_sessions #container {
+  width: 400px;
+}
+
+body.user_sessions #main #content {
+  float: none;
+  margin-right: .75em;
+  width: auto;
+}
+
+body.user_sessions #main #content input[type=text], body.user_sessions #main #content input[type=password] {
+  width: 95%;
+}
+
+body.user_sessions #main #side {
   display: none;
 }
 
