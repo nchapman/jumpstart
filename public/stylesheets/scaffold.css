@@ -191,20 +191,20 @@ a[href$=new], input[type=submit] {
   font-size: 92%;
   font-weight: bold;
   line-height: 1em;
-  padding: .8em 1.2em;
+  padding: 7px 14px;
   text-decoration: none;
-  text-shadow: 1px 1px 0 #fff;
+  text-shadow: 1px 1px 0 #f7f7f7;
 }
 
 a[href$=new]:hover, input[type=submit]:hover {
   background-color: #f4f4f4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#e5e5e5));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#d2d2d2));
 }
 
 a[href$=new]:active, input[type=submit]:active {
   background: #ddd;
-  padding-top: .9em;
-  padding-bottom: .7em;
+  padding-top: 8px;
+  padding-bottom: 6px;
 }
 
 /* Errors */
